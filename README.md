@@ -24,7 +24,6 @@ The script generates smooth 2D contour plots showing the behavior of the real pa
 
 Plots showing how the real and imaginary components of the impedance vary with the magnetic field for selected frequencies.
 
-*(To be added if this part is later implemented)*
 
 ## 🛠️ Technologies
 
