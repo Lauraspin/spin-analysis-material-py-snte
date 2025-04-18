@@ -53,7 +53,7 @@ Plots showing how the real and imaginary components of the impedance vary with t
 
 ## 📌 Notes
 
-- The original data is experimental. If sharing publicly, consider using dummy or anonymized data.
+- Due to confidentiality reasons, the original data used in this project is not available. However, the analysis scripts are fully functional and structured to work with similarly formatted data.
 - The 3D plotting code was exploratory and is not the focus of this repository.
 
 ## 👩‍🔬 Author
