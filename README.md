@@ -36,7 +36,7 @@ Plots showing how the real and imaginary components of the impedance vary with t
 ## 📁 File Structure
 
 ```
-├── data/              # Raw experimental data (optional or synthetic for privacy)
+├── data/              # Raw experimental data 
 ├── notebooks/         # Jupyter Notebooks with full analysis
 ├── img/               # Output figures
 ├── README.md
