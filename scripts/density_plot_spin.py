@@ -1,5 +1,6 @@
 # Gráfico de densidade da parte real do delta Z
 # Py/Ag vs Py/SnTe
+'''For those who want to copy and paste the code.'''
 
 import pandas as pd
 import numpy as np
