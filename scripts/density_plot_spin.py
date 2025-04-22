@@ -1,4 +1,4 @@
-# Gráfico de densidade da parte real do delta Z
+# Density plot of the real part of delta Z
 # Py/Ag vs Py/SnTe
 '''For those who want to copy and paste the code.'''
 
@@ -7,26 +7,24 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import griddata
 
-# Leitura dos dados
+# Import data
 a = pd.read_table('data/PyAgAg_vid.txt', names=['H', 'F', 'dR', 'dIm', 'Z'])
 b = pd.read_table('data/PySnTeAg_vid.txt', names=['H', 'F', 'dR', 'dIm', 'Z'])
 
-# Extração das colunas
 H = a['H']
-F = a['F'] / 1e9  # Frequência em GHz
+F = a['F'] / 1e9  # Conversion to GHz
 R = a['dR']
 Rb = b['dR']
 
-# Grade para interpolação
+# Grid for interpolation
 H_grid = np.linspace(H.min(), H.max(), 300)
 F_grid = np.linspace(F.min(), F.max(), 300)
 H_mesh, F_mesh = np.meshgrid(H_grid, F_grid)
 
-# Interpolação dos dados
+# Interpolation itself
 Z_grid = griddata((H, F), R, (H_mesh, F_mesh), method='cubic')
 Zb_grid = griddata((H, F), Rb, (H_mesh, F_mesh), method='cubic')
 
-# Plotagem
 plt.figure(figsize=(6, 6))
 
 # Py/Ag
