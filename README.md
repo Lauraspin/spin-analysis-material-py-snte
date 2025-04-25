@@ -1,6 +1,6 @@
 # spin-analysis-py-snte
 
-This repository contains Python scripts developed during my undergraduate thesis in Physics at UFRN. The goal was to analyze impedance measurements from magnetic thin film samples using contour plots and interpolation techniques.
+This repository contains Python scripts developed during my undergraduate thesis in Physics at UFRN. The goal was to analyze magnetoimpedance measurements from two thin film samples using contour plots and interpolation techniques.
 
 ## 🧪 Project Overview
 
